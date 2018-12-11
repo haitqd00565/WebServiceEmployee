@@ -113,7 +113,7 @@ namespace EmployeeWebserviceRest
 			this.Initialize();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_empId", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_empId", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=1)]
 		public int empId
 		{
